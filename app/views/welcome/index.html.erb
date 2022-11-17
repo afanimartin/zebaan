@@ -1,7 +1,9 @@
 <section class="all-contacts">
   <% if @contacts.size > 0 %>
     <% @contacts.each do |contact| %>
-      <h3><%= contact.company_name %></h3>
+      <section class="single-contact">
+        <h3><%= link_to contact.company_name.titleize, contact %></h3>
+      </section>
     <% end %>
   <% else %>
     <h3>No contacts at the moment</h3>

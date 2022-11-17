@@ -11,22 +11,26 @@ html {
   background-color: #f8f9fa;
 }
 
+a {
+  text-decoration: none;
+  color: #191b1f;
+}
+
 .navbar-brand > img {
   width: 100px;
 }
 
-.model-form {
+.model-form,
+.all-contacts,
+.company-details {
   width: 60%;
   margin: 0 auto;
 }
 
-.white-bg-form {
+.white-bg,
+.single-contact {
   background-color: #fff;
   padding: 15px;
   border-radius: 7px;
   border: 1px solid rgb(240, 240, 240);
-}
-
-.navbar .bg-light {
-  background-color: #fff;
 }
