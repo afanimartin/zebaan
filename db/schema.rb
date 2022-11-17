@@ -20,9 +20,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_17_211456) do
     t.text "company_background"
     t.text "company_address", null: false
     t.string "phone", null: false
-    t.string "facebook"
-    t.string "twitter"
-    t.string "linkedin"
+    t.string "facebook", default: ""
+    t.string "twitter", default: ""
+    t.string "linkedin", default: ""
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.uuid "user_id", null: false

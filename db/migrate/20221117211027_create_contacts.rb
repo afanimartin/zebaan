@@ -6,9 +6,9 @@ class CreateContacts < ActiveRecord::Migration[7.0]
       t.text :company_background
       t.text :company_address, null: false
       t.string :phone, null: false
-      t.string :facebook
-      t.string :twitter
-      t.string :linkedin
+      t.string :facebook, default: ""
+      t.string :twitter, default: ""
+      t.string :linkedin, default: ""
 
       t.timestamps
     end

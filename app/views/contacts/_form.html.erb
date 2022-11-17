@@ -1,0 +1,25 @@
+<%= form_with model: @contact do |form| %>
+  <div class="mb-3">
+    <%= form.label :company_name, class: "form-label" %>
+    <%= form.text_field :company_name, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :company_background, class: "form-label" %>
+    <%= form.text_field :company_background, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :company_address, class: "form-label" %>
+    <%= form.text_field :company_address, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :phone, class: "form-label" %>
+    <%= form.text_field :phone, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit "Add contact", class: "btn btn-primary" %>
+  </div>
+<% end %>
