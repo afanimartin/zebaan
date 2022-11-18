@@ -13,7 +13,6 @@ html {
 
 a {
   text-decoration: none;
-  color: #191b1f;
 }
 
 .navbar-brand > img {
@@ -28,9 +27,48 @@ a {
 }
 
 .white-bg,
-.single-contact {
+.single-contact,
+.authentication-form {
   background-color: #fff;
   padding: 15px;
   border-radius: 7px;
   border: 1px solid rgb(240, 240, 240);
+}
+
+.new-btn {
+  margin: 20px 0;
+}
+
+.single-contact {
+  margin-bottom: 20px;
+}
+
+.authentication-form,
+.alerts-section {
+  width: 40%;
+  margin: 30px auto;
+}
+
+.form-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-title > img {
+  width: 200px;
+}
+
+@media screen and (max-width: 425px) {
+  .model-form,
+  .all-contacts,
+  .company-details,
+  .authentication-form,
+  .alerts-section {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .form-title {
+    margin-bottom: 30px;
+  }
 }
