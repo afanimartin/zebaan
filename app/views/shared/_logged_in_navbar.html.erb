@@ -1,28 +1,28 @@
 <% if current_user %>
   <section class="side-navbar">
     <section class="nav-brand">
-      <%= image_tag "deeler.png" %>
+      <a href="/"><%= image_tag "deeler.png" %></a>
     </section>
     <hr>
     <section class="user-profile">
       <%= image_tag "avataaars.png" %>
       <section class="user-details">
         <%= current_user.first_name + " " + current_user.last_name %>
-        <small><%= current_user.email %></small>
+        <small class="light-grey"><%= current_user.email %></small>
       </section>
     </section>
     <section class="nav-links">
       <ul class="dashboard-link">
           <li><i class="bi bi-sliders"></i></li>
-          <li><%= link_to "Dashboard" %></li>
+          <li><%= link_to "Dashboard", root_path %></li>
         </ul>
       <ul class="dashboard-link">
         <li><i class="bi bi-diagram-2"></i></li>
-        <li><%= link_to "Tasks" %></li>
+        <li><%= link_to "Tasks", tasks_path %></li>
       </ul>
       <ul class="dashboard-link">
         <li><i class="bi bi-person"></i></li>
-        <li><%= link_to "Contacts" %></li>
+        <li><%= link_to "Contacts", contacts_path %></li>
       </ul>
       <ul class="dashboard-link">
         <li><i class="bi bi-chat"></i></li>

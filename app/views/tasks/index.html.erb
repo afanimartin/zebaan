@@ -1,0 +1,17 @@
+<% if @tasks.size > 0 %>
+  <h1>Tasks</h1>
+  <section class="all-tasks">    
+    <% @tasks.each do |task| %>
+      <section class="single-task">
+        <%= link_to task.content.capitalize, edit_task_path(task) %><br>
+        <small class="light-grey"><%= task.is_complete ? "Done" : "Pending" %></small>
+      </section>
+    <% end %>
+  </section>
+  <div class="vertical-divide"></div>
+  <%= link_to "Add new task", new_task_path, class: "btn btn-primary" %>
+<% else %>
+  <h1>You do not have any tasks.</h1><br> 
+  <%= link_to "Add new task", new_task_path, class: "btn btn-primary" %>
+<% end %>
+

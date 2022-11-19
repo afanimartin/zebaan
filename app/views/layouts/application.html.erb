@@ -9,14 +9,14 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 
-    <%= favicon_link_tag asset_path('deeler.png') %>
+    <%= favicon_link_tag asset_path('deeler-favicon.png') %>
   </head>
 
   <body>
     <% if current_user %>
       <div class="main-body">
         <%= render "shared/logged_in_navbar" %>
-        <div class="container">
+        <div class="main-content">
           <%= render "shared/search_form" %>
           <%= render "layouts/alerts" %>
           <%= yield %>

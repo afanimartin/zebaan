@@ -1,0 +1,28 @@
+<%= form_with model: task do |form| %>
+  <div class="mb-3">
+    <%= form.label :content, class: "form-label" %>
+    <%= form.text_field :content, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :description, class: "form-label" %>
+    <%= form.text_area :description, class: "form-control" %>
+  </div>
+
+  <%= form.label "Task status", class: "form-label" %>
+  <div class="form-check">
+    <%= form.radio_button :is_complete, "false", class: "form-check-input" %>
+    <%= form.label "Pending", class: "form-check-label" %>
+  </div>
+
+  <div class="form-check">
+    <%= form.radio_button :is_complete, "true", class: "form-check-input" %>
+    <%= form.label "Done", class: "form-check-label" %>
+  </div>
+
+  <div class="vertical-divide"></div>
+
+  <div class="mb-3">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
