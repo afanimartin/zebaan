@@ -1,19 +1,13 @@
-<section class="all-contacts">
-  <% if @contacts.size > 0 %>
-    <h1>Your contacts</h1>
-    <% @contacts.each do |contact| %>
-      <section class="single-contact">
-        <h3><%= link_to contact.company_name.titleize, contact %></h3>
-        <p><%= contact.company_background.capitalize %></p>
-      </section>
-    <% end %>
-    <section class="new-btn">
-      <%= link_to "Add new contact", new_contact_path, class: "btn btn-primary" %>
+<section class="user-dashboard">
+  <section class="activity-summary">
+    <h1>User summary</h1>
+  </section>
+  <section class="user-deals-tasks">
+    <section class="user-deals">
+      <h2>User deals</h2>
     </section>
-  <% else %>
-    <h3>No contacts at the moment</h3>
-    <section class="new-btn">
-      <%= link_to "Add new contact", new_contact_path, class: "btn btn-primary" %>
+    <section class="user-tasks">
+      <h2>User tasks</h2>
     </section>
-  <% end %>
+  </section>
 </section>

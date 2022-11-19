@@ -1,0 +1,5 @@
+<section class="search-form">
+  <%= form_with model: Contact.new do |form| %>
+    <%= form.text_field :company_background, class: "form-control me-2", placeholder: "search here..." %>
+  <% end %>
+</section>

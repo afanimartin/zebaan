@@ -11,18 +11,30 @@ html {
   background-color: #f8f9fa;
 }
 
-a {
-  text-decoration: none;
+.main-body {
+  display: grid;
+  grid-template-columns: 18% 68%;
+  grid-gap: 4%;
 }
 
-.navbar-brand > img {
-  width: 100px;
+a {
+  text-decoration: none;
+  color: #334d6e;
+}
+
+ul {
+  list-style: none;
+}
+
+.side-navbar {
+  background-color: #fff;
+  height: 100vh;
 }
 
 .model-form,
 .all-contacts,
 .company-details {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -56,6 +68,71 @@ a {
 
 .form-title > img {
   width: 200px;
+}
+
+.side-navbar {
+  border-right: 1px solid rgb(240, 240, 240);
+}
+
+.user-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-profile > img {
+  width: 25%;
+}
+
+.nav-brand {
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.nav-brand > img {
+  width: 50%;
+}
+
+.nav-links {
+  margin-top: 30px;
+}
+
+.dashboard-link {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.dashboard-link .bi {
+  margin-right: 10px;
+}
+
+.search-form {
+  margin-top: 50px;
+}
+
+.search-form form > input {
+  padding: 10px;
+}
+
+.user-dashboard {
+  display: grid;
+  grid-template-columns: 59% 39%;
+  grid-gap: 2%;
+}
+
+.activity-summary,
+.user-tasks,
+.user-deals {
+  background-color: #fff;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 7px;
+}
+
+.activity-summary,
+.user-deals-tasks {
+  height: 100%;
 }
 
 @media screen and (max-width: 425px) {
